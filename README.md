@@ -1,6 +1,9 @@
 # Sitecore Practice Quiz
 
 This is a simple GUI application built with Python and tkinter that serves as a practice quiz for Sitecore, a popular content management system.
+This is by no means the ultimate practice, but you can edit the questions, add or remove questions. 
+
+If yo make the application better, let me know! 😊
 
 ## Features
 
