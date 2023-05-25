@@ -1,3 +1,5 @@
+    Some questions are from chatGPT, but most are from http://promptcode.blogspot.com/p/sitecore-90-certified-platform.html
+    
     Question("What does the abbreviation 'CDN' stand for in the context of Sitecore?", "Content Delivery Network", ["Content Development Network", "Custom Design Node", "Core Database Node"]),
     Question("What is the main purpose of Sitecore's xDB?", "Collect and connect customer data to provide a comprehensive view of the customer", ["Improve website speed", "Manage website themes", "Secure customer data"]),
     Question("Which of the following is NOT a feature of Sitecore's xDB?", "It allows you to build and deploy websites", ["It collects customer data from all channels", "It connects customer data for a comprehensive view", "It allows for personalization based on collected data"]),
