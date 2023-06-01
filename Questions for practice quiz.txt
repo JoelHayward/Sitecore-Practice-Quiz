@@ -1,6 +1,6 @@
     Some questions are from chatGPT, but most are from http://promptcode.blogspot.com/p/sitecore-90-certified-platform.html
     
-    Question("What does the abbreviation 'CDN' stand for in the context of Sitecore?", "Content Delivery Network", ["Content Development Network", "Custom Design Node", "Core Database Node"]),
+Question("What does the abbreviation 'CDN' stand for in the context of Sitecore?", "Content Delivery Network", ["Content Development Network", "Custom Design Node", "Core Database Node"]),
     Question("What is the main purpose of Sitecore's xDB?", "Collect and connect customer data to provide a comprehensive view of the customer", ["Improve website speed", "Manage website themes", "Secure customer data"]),
     Question("Which of the following is NOT a feature of Sitecore's xDB?", "It allows you to build and deploy websites", ["It collects customer data from all channels", "It connects customer data for a comprehensive view", "It allows for personalization based on collected data"]),
     Question("What is the main function of Sitecore's Universal Tracker?", "Tracking user interactions across multiple channels", ["Improving search performance", "Managing multiple websites", "Automating marketing tasks"]),
@@ -66,7 +66,7 @@
     Question("How can you retrieve your site's start item location programmatically?", "String startPath = Sitecore.Context.Site.StartPath\nItem Homepage = Sitecore.Context.Database.GetItem(startPath)", ["String startPath = Sitecore.Context.Site.rootPath\nItem Homepage = Sitecore.Context.Database.GetItem(rootPath)", "String startPath = Sitecore.Context.Site.path\nItem Homepage = Sitecore.Context.Database.GetItem(path)", "String startPath = Sitecore.Context.Site.rootpath\nItem Homepage = Sitecore.Context.Database.GetItem(rootpath)"]),
     Question("What's the path of the Single website and Home Item?", "/Sitecore/Content/Home", ["/Sitecore/Home", "/Sitecore/Item/Home", "/inetpub/wwroot/Web/Home"]),
     Question("What's the recommended practices for a multisite implementation?", "All of the above", ["Creating a folder for each site", "Ensuring that each site folder has its own Home item", "Storing shared content outside of each site folder"]),
-    Question("What version of Visual Studio works with the Sitecore project?", "Visual Studio 2015 or higher", ["Visual Studio 2012", "Visual Studio 2014", "Visual Studio 2015"])
+    Question("What version of Visual Studio works with the Sitecore project?", "Visual Studio 2015 or higher", ["Visual Studio 2012", "Visual Studio 2014", "Visual Studio 2015"]),
     Question("Visual Studio is the main tool to:", "All of the above", ["Configure and manage Sitecore project", "Code Layouts and renderings", "Manage configuration files"]),
     Question("Sitecore Rocks allows you to:", "All of the above", ["Create and manage site content from the Visual Studio", "Create Presentation component items and code files", "Integrate with your Visual Studio project", "Use site management tools", "Create and Install Sitecore packages"]),
     Question("Everything in Sitecore is an item", "True", ["False"]),
@@ -86,7 +86,7 @@
     Question("Which rendering is used occasionally?", "Item Rendering", ["View Rendering", "Controller Rendering", "Method Rendering", "URL Rendering"]),
     Question("What renderings are supported only for legacy reasons?", "Method Rendering, XSLT Rendering, Url Rendering", ["All of the above"]),
     Question("Where do you create a model in Sitecore for structured data to be consumed by MVC view?", "Layout>Model", ["Template>System", "System>Model", "Sitecore>Model"]),
-    Question("What steps are required for a custom route in Sitecore?", "Define a custom route, Register the custom route", ["Create a custom route", "Execute the route"])
+    Question("What steps are required for a custom route in Sitecore?", "Define a custom route, Register the custom route", ["Create a custom route", "Execute the route"]),
     Question("Areas enable you to group collections of controllers and views together to help subdivide and organize complex projects.", "True", ["False"]),
     Question("What's the recommended practice to add Sitecore libraries to your project?", "Nuget", ["Copy and paste the library from a bin folder", "Reference the dll files in the bin folder", "None of the above"]),
     Question("What are the advantages of creating a project outside of the web root folder?", "All of the above", ["Separation of Concern: between solution files and Sitecore files", "Use the same Visual Studio project when you upgrade Sitecore or create a new instance.", "Easy to backup, restore, and move project."]),
@@ -110,7 +110,7 @@
     Question("Which of the following can you use to access the xDB core?", "xConnect Client API", ["Content Search API", "xDB API", "xDB Processing"]),
     Question("The client has direct access to the collection database or the search index.", "False", ["True"]),
     Question("What single endpoint name is used by the collection and Search in the development environment?", "xdb.collection", ["xdb.search", "xdb.collection search", "None of the above"]),
-    Question("Where do you configure the xConnect endpoints?", "\\App_Config\\ConnectionStrings.config", ["\\App_Config\\Layers.config", "\\App_Config\\sitecore.config", "\\App_Config\\Web.config"])
+    Question("Where do you configure the xConnect endpoints?", "\\App_Config\\ConnectionStrings.config", ["\\App_Config\\Layers.config", "\\App_Config\\sitecore.config", "\\App_Config\\Web.config"]),
     Question("Which one of the following can help you connect to Sitecore using a Console application?", "xConnect Client API", ["xdb Service", "xdb collection service", "Content Search API"]),
     Question("Which model defines the CLR types, facets, and events?", "xConnect Collection model", ["xDB model", "Sitecore", "xConnect search"]),
     Question("The xConnect service must have a JSON representation of any model that a client application wishes to use.", "True", ["False"]),
@@ -138,7 +138,7 @@
     Question("How does Sitecore handle an item without a Display Name?", "Name is used as a fallback", ["Generate an exception", "Hides the item", "None of the above"]),
     Question("Name and Display appear on the content item for all users.", "False", ["True"]),
     Question("The fields in Sitecore can be:", "Versioned, Shared, Unversioned", ["All of the above"]),
-    Question("What version is created by default when you create a field in Sitecore?", "Versioned", ["Shared", "Unversioned", "Single Versioned"])
+    Question("What version is created by default when you create a field in Sitecore?", "Versioned", ["Shared", "Unversioned", "Single Versioned"]),
     Question("Which option will allow users to create a single version of the field value for all languages?", "Shared", ["Versioned", "Unversioned", "Single Versioned"]),
     Question("Which option will allow users to create a unique version of the field value per language?", "Unversioned", ["Versioned", "Shared", "Single Versioned"]),
     Question("All fields must be versioned in Sitecore.", "False", ["True"]),
@@ -165,7 +165,7 @@
     Question("Which content item is owned by production and should never be overwritten by an item coming from the development or test environment?", "Site home page item", ["Template", "Field", "None of the above"]),
     Question("The Definition items and some content items in Sitecore are created and managed in the development environment.", "True", ["False"]),
     Question("What allows items stored in the Master or Core database to be written to disk in a text-based format and subsequently restored into a database?", "Serialization", ["Restore", "Versioning", "None of the above"]),
-    Question("What tools are recommended to be used for item Serialization in Sitecore?", "TDS, Unicorn", ["Github", "Sitecore Rocks"])
+    Question("What tools are recommended to be used for item Serialization in Sitecore?", "TDS, Unicorn", ["Github", "Sitecore Rocks"]),
     Question("It is highly recommended to deploy business logic and items together in your deployment process.", "True", ["False"]),
     Question("What are the two tools that you can use to create and edit the content on your website?", "Content Editor, Experience Editor", ["Sitecore Editor", "Sitecore Rocks"]),
     Question("Which tool can editors use to edit and write content directly on the page?", "Experience Editor", ["Content Editor", "Sitecore Rocks", "Sitecore Editor"]),
@@ -194,7 +194,7 @@
     Question("What two frameworks does Sitecore support?", "MVC, Web Forms", ["JSON", "Bootstrap"]),
     Question("What is the recommended practice to reference Sitecore binaries to your project?", "Nuget", ["Copy from the Sitecore installation", "Copy from Coworker's machine", "Contact Sitecore support"]),
     Question("The best practice is to set presentation details on the standard values.", "True", ["False"]),
-    Question("If the Sitecore page is displaying an error 'no layout', what could be the possible cause of this error?", "Presentation details are not set", ["Component .cshtml file is missing", "Template is not set on the item", "Template is not inherited from the base template"])
+    Question("If the Sitecore page is displaying an error 'no layout', what could be the possible cause of this error?", "Presentation details are not set", ["Component .cshtml file is missing", "Template is not set on the item", "Template is not inherited from the base template"]),
     Question("Helix guidelines and conventions focus on architecture and mapping dependencies correctly.", "True", ["False"]),
     Question("Presentation in Sitecore is carried out by:", "Layout, Component", ["Layout", "Component", "None of the above"]),
     Question("Layout in Sitecore is:", "Scaffold of the page", ["Inner parts of the page", "Component", "Template"]),
@@ -226,7 +226,7 @@
     Question("What is an Edit Frame?", "A region of the page that reacts to clicking by showing a toolbar", ["A component on that page to display item values", "A view of an image displayed within a page", "None of the above"]),
     Question("Which one of the following will help a developer add a button to any toolbar to display a field editor?", "Edit Frame button", ["Complex item", "Render item", "Edit Item button"]),
     Question("What is the most significant feature of the Sitecore system when designing the user experience in Sitecore?", "Dynamic layout engine", ["Static layout engine", "Data Templates", "All of the above"]),
-    Question("How should a partial view be prefixed in Sitecore?", "Underscore", ["CamelCase", "User-friendly names", "All of the above"])
+    Question("How should a partial view be prefixed in Sitecore?", "Underscore", ["CamelCase", "User-friendly names", "All of the above"]),
     Question("How do you register a View Rendering with Sitecore?", "Create a View Rendering definition item, Point to the path of the .cshtml file", ["Create a Controller rendering definition item, Reference the Controller and Controller Action view by name", "All of the above"]),
     Question("How do you register a Controller Rendering with Sitecore?", "Create a Controller rendering definition item, Reference the Controller and Controller Action view by name", ["Create a View Rendering definition item, Point to the path of the .cshtml file", "All of the above"]),
     Question("Placeholders are added to the markup in code and are identified with a unique placeholder key.", "True", ["False"]),
@@ -275,7 +275,7 @@
     Question("When you edit an item, how do you ensure that your changes are made on the Master database only?", "Point to the Master data using the following statement Var masterDB = Sitecore.Configuration.Factory.GetDatabase('master')", ["Change the database from the Sitecore Desktop view", "Change the database from the Sitecore Rocks plugin", "All of the above"]),
     Question("Anonymous visitors have permissions to create items in Sitecore.", "True", ["False"]),
     Question("How do you run code as another user in Sitecore?", "Sitecore.SecurityModel.SecurityDisabler(), Sitecore.Security.Accounts.UserSwitcher('usersID')", ["Sitecore.Context.Account.Switch('userid');", "None of the above"]),
-    Question("What are the steps to edit content programmatically?", "Ensure you have the required permissions, Retrieve the item, Invoke the Editing.BeginEdit() method, Change the field values, Invoke the Editing.EndEdit() method", ["All of the above"])
+    Question("What are the steps to edit content programmatically?", "Ensure you have the required permissions, Retrieve the item, Invoke the Editing.BeginEdit() method, Change the field values, Invoke the Editing.EndEdit() method", ["All of the above"]),
     Question("Which one of the following can you use when you need an endpoint to access and manipulate data remotely?", "Sitecore.Services.Client", ["Sitecore.Services.EndPoint", "Sitecore.Services.Context", "Sitecore.Services.DB"]),
     Question("Where can developers find JavaScript libraries?", "\\Sitecore\\shell\\client\\Services\\Assets\\lib", ["\\Sitecore\\shell\\configure\\Assets", "\\Sitecore\\shell\\Configure\\lib", "None of the above"]),
     Question("The Search Facets are calculated after the search.", "True", ["False"]),
